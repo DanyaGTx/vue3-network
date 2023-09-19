@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+    },
+    "plugins": ["@typescript-eslint", "prettier", "sort-imports-es6-autofix"],
+    "rules": {
+      "prettier/prettier": ["error", { "singleQuote": true }],
+      "sort-imports-es6-autofix/sort-imports-es6": [
+        "warn",
+        {
+          "ignoreCase": false,
+          "ignoreMemberSort": false,
+          "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        },
+      ],
+    },
+    "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "prettier"]
+  }
+  
